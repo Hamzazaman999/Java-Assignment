@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td>100</td>
+            <td>76</td>
+            <td>76%</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>100</td>
+            <td>80</td>
+            <td>80%</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>100</td>
+            <td>72</td>
+            <td>72%</td>
+        </tr>
+
+
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <script>
+        
+        var a = 10;
+        document.write(`We have set the value of (a) to: ${a}<br>`);
+
+        ++a;
+        document.write(`<br> Now the Value of (a) after ++a is: ${a} <br>`);
+
+        a++;
+        document.write(`<br> The value of a++ is: 11<br>Now the Value of (a) is:12<br>`);
+
+        --a;
+        document.write(`<br>The value of --a is:11 <br>The value of (a) is:${a}<br>`);
+
+        a--;
+        document.write(`<br>The value of a-- is:11 <br>The value of (a) is:10<br>`)
+
+        var userInput = parseInt(prompt("Input Number For Multiplication Table in Console"));
+        for(let i = 1; i <= 10; i++){
+            var result = i * userInput;
+            console.log(userInput + "x" + i + "=" + result);
+        }
+
+        var a = 2
+        var b = 1;
+        var result = --a - --b + ++b + b--;
+        document.write(`--a: 1
+                        <br>--a - --b: 1
+                        <br>--a - --b + ++b: 2
+                        <br>--a - --b + ++b + b--; 3
+                        <br> a = 1
+                        <br> b = 2
+                        <br>Result is: ${result}`);
+    </script>
+</body>
+
+</html>

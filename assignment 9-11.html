@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+  <script>
+
+      // Part A
+    var city = prompt("Tell Your City");
+    if (city == "Karachi") {
+      document.write(`Welcome To City Of Lights`);
+    }
+
+    else {
+      document.write("You are not from Karachi");
+    }
+       // Part B
+    var gender = prompt("Please Tell Your Gender");
+    if (gender == "Male") {
+      alert("GoodMorning Sir");
+    }
+    if (gender == "Female") {
+      alert("GoodMorning Ma`am");
+    }
+
+     // Part C
+    var signal = prompt("Please Enter Signal Color");
+    if (signal == "Red") {
+      document.write("Must Stop");
+    }
+    if (signal == "Yellow") {
+      document.write("Ready To Move");
+    }
+    if (signal == "Green") {
+      document.write("Move Now");
+    }
+    else {
+      ("");
+      document.write("Please Enter First Word Capital For Signal Color");
+    }
+       // Part D
+    var fuel = prompt("Input the remaining fuel in car");
+    if (fuel <= 0.25) {
+      document.write("Please Refill Your Tank");
+    }
+    else {
+      document.write("You Are Good To Go");
+    }
+         // Part E
+    document.write("Testing Scripts<br>");
+
+    var a = 4
+    if (++a === 5) {
+      alert("Given Condition Is True");
+    }
+    b = 82
+    if (b++ === 83) {
+      alert("Given COndition Is true");
+    }
+    var c = 12
+    if (c++ === 13) {
+      alert("Given COndition 1 Is true");
+    }
+    if (c === 13) {
+      alert("Given COndition 2 Is true");
+    }
+    if (++c < 14) {
+      alert("Given COndition 3 Is true");
+    }
+    if (c === 14) {
+      alert("Given COndition 4 Is true");
+    }
+     // Part F
+    var materialcost = 20000
+    var labourcost = 2000
+    var totalcost = materialcost + labourcost
+    if (totalcost === materialcost + labourcost) {
+      alert("the cost is equal");
+    }
+    if ('true') {
+      alert("true");
+    }
+    if ("false") {
+      alert("False");
+    }
+         // Part G
+    var sub1 = prompt("Please Enter Your Marks For Maths")
+    var sub2 = prompt("Please Enter Your Marks For Physics")
+    var sub3 = prompt("Please Enter Your Marks For Chemistry")
+    var totalmarks = 300;
+    var obtMarks = +sub1 + sub2 + sub3
+    var percentage = (obtMarks * 100 / totalmarks);
+    document.write(`<br>Total Marks: ${totalmarks}
+    <br> Marks Obtained: ${obtMarks}
+    <br> Percentage: ${percentage}
+    `);
+         // Part H
+    var secretnum = 7
+    var input = prompt("Guess The Secret Number");
+    if (secretnum == input) {
+      alert("Bingoo!!You Guess The Right Number");
+    }
+    else {
+      alert("You Guess The Wrong Number");
+    }
+           // Part I
+    var temp = prompt("Enter The Temperature")
+    if (temp > 40) {
+      alert("“It is too hot outside.”");
+    }
+    else if (temp > 30) {
+      alert("“The Weather today is Normal");
+    }
+    else if (temp > 20) {
+      alert("Today’s Weather is cool");
+    }
+    else if (temp > 10) {
+      alert("“OMG! Today’s weather is so Cool");
+    }
+         // Part J
+    var user1Number = +prompt("give me a first number");
+    var user2Number = +prompt("give me a second number");
+    var operation = prompt("give me a operation(+,/,*,-,%)");
+
+    if (isNaN(user1Number) || isNaN(user2Number)) {
+      console.log('not a number');
+    } else if (operation === "+") {
+      console.log(user1Number + user2Number);
+    } else if (operation === "-") {
+      console.log(user1Number - user2Number);
+    } else if (operation === "*") {
+      console.log(user1Number * user2Number);
+    } else if (operation === "/") {
+      console.log(user1Number / user2Number);
+    } else if (operation === "%") {
+      console.log(user1Number % user2Number);
+    } else {
+      console.log('wrong operator');
+    }
+
+  </script>
+</body>
+
+</html>
