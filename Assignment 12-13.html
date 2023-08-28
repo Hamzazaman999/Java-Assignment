@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const input1 = parseInt(prompt("Enter the first integer:"));
+        const input2 = parseInt(prompt("Enter the second integer:"));
+
+        function findLargerInteger(num1, num2) {
+            if (num1 > num2) {
+                alert(num1 + " is larger.");
+            } else if (num2 > num1) {
+                alert(num2 + " is larger.");
+            } else {
+                alert("Both integers are equal.");
+            }
+        }
+        // Check if the inputs are valid integers
+        if (isNaN(input1) || isNaN(input2)) {
+                alert("Please enter valid integers.");
+        } else {
+            // Call the function to find and display the larger integer
+            findLargerInteger(input1, input2);
+        }
+
+           var input = prompt("Please Enter Vowel");
+            if (input == 'a' ){
+                alert("TRUE! You entered an correct vowel");
+            }
+            if (input == 'e' ){
+                alert("TRUE! You entered an correct vowel");
+            }
+            if (input == 'i' ){
+                alert("TRUE! You entered an correct vowel");
+            }
+            if (input == 'o' ){
+                alert("TRUE! You entered an correct vowel");
+            }
+            if (input == 'u' ){
+                alert("TRUE! You entered an correct vowel");
+            }
+            else (
+                alert("Please Enter a Correct Vowel")
+            )  
+
+
+        var enterPass = prompt("Enter Your Password");
+        if (enterPass == "zaman"){
+            document.write("Congrats! You Have Entered The Same Password");
+        } else {
+          document.write("Please Enter Your Correct Password");
+        }
+
+        var greeting = "Good Day";
+        var hour = prompt("Enter The Time");
+        if (hour < 18){
+           document.write(greeting);
+        }
+        else (
+            document.write("Good evening")
+        )
+
+        var time = prompt("What's The Time RightNow!");
+        if ( time >= 0 && time < 12 ){
+            alert("Good Morning");
+        }
+        else if ( time >= 12 && time < 17 ){
+            alert("Good AfterNoon");
+        }
+        else if ( time >= 17 && time < 21 ){
+            alert("Good Evening");
+        }
+        else if ( time >= 21 && time < 24 ){
+            alert("Good Night");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
